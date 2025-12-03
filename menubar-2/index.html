@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Menu Navigation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Ionicons Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- GSAP for premium animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- SplitType Library -->
+    <script src="https://unpkg.com/split-type"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="cursor-circle"></div>
+    </div>
+
+    <nav>
+      <div class="menu-toggle">
+        <div class="menu-text">
+          <span class="menu-open">Menu</span>
+          <span class="menu-close">Close</span>
+        </div>
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="nav-title">
+        <p>collection</p>
+        <div class="nav-line"></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="menu-container">
+        <div class="menu-overlay"></div>
+        <div class="menu">
+          <div class="menu-main">
+            <div class="menu-top">
+              <div class="menu-top-title">
+                <div class="title-line"></div>
+                <p class="discover-text">discover</p>
+                <div class="title-line"></div>
+              </div>
+              <div class="menu-top-content">
+                <div class="menu-item">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a href="#" class="link-text" data-number="001">
+                          <span class="link-char">S</span>
+                          <span class="link-char">t</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">r</span>
+                          <span class="link-char">y</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number">page 001</span>
+                    <div class="page-indicator">
+                      <div class="indicator-dot active"></div>
+                      <div class="indicator-dot"></div>
+                      <div class="indicator-dot"></div>
+                      <div class="indicator-dot"></div>
+                      <div class="indicator-dot"></div>
+                      <div class="indicator-dot"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a href="#" class="link-text" data-number="002">
+                          <span class="link-char">p</span>
+                          <span class="link-char">r</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">t</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">c</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">l</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number">page 002</span>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a href="#" class="link-text" data-number="003">
+                          <span class="link-char">j</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">u</span>
+                          <span class="link-char">r</span>
+                          <span class="link-char">n</span>
+                          <span class="link-char">a</span>
+                          <span class="link-char">l</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number">page 003</span>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a href="#" class="link-text" data-number="004">
+                          <span class="link-char">C</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">n</span>
+                          <span class="link-char">t</span>
+                          <span class="link-char">a</span>
+                          <span class="link-char">c</span>
+                          <span class="link-char">t</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number">page 004</span>
+                  </div>
+                </div>
+
+                <div class="menu-item active">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient active-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a
+                          href="#"
+                          class="link-text active-text"
+                          data-number="005"
+                        >
+                          <span class="link-char">G</span>
+                          <span class="link-char">a</span>
+                          <span class="link-char">l</span>
+                          <span class="link-char">l</span>
+                          <span class="link-char">e</span>
+                          <span class="link-char">r</span>
+                          <span class="link-char">y</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number active-number">page 005</span>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-content">
+                    <div class="menu-item-link">
+                      <div class="bg-hover">
+                        <div class="hover-gradient"></div>
+                      </div>
+                      <div class="link-wrapper">
+                        <a href="#" class="link-text" data-number="006">
+                          <span class="link-char">A</span>
+                          <span class="link-char">b</span>
+                          <span class="link-char">o</span>
+                          <span class="link-char">u</span>
+                          <span class="link-char">t</span>
+                        </a>
+                        <div class="link-underline"></div>
+                      </div>
+                    </div>
+                    <span class="page-number">page 006</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-bottom">
+              <div class="menu-sub-item">
+                <div class="menu-title"><p>connect</p></div>
+                <div class="menu-content">
+                  <p>discord</p>
+                  <div class="content-line"></div>
+                </div>
+              </div>
+              <div class="menu-sub-item">
+                <div class="menu-title"><p>Buy On</p></div>
+                <div class="menu-content">
+                  <p>Opensea</p>
+                  <div class="content-line"></div>
+                </div>
+              </div>
+              <div class="menu-sub-item">
+                <div class="menu-title"><p>US-EN</p></div>
+                <div class="menu-content">
+                  <p>2024</p>
+                  <div class="content-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-sidebar">
+            <div class="close-btn">
+              <div class="close-icon">
+                <div class="close-line close-line-1"></div>
+                <div class="close-line close-line-2"></div>
+              </div>
+            </div>
+            <div class="logo">
+              <div class="logo-container">
+                <div class="logo-circle"></div>
+                <ion-icon name="diamond-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="menu-progress">
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+              <div class="progress-text">NAVIGATION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sound-toggle">
+      <i class="fas fa-volume-up"></i>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
